@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Gotham', sans-serif;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('path-to-your-font/Gotham.woff2') format('woff2'),
+         url('path-to-your-font/Gotham.woff') format('woff'),
+         url('path-to-your-font/Gotham.otf') format('opentype');
+  }
+
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h2 {
+    text-align: right;
+    margin-top: 235px; /* Adjust this value to create the space you want */
+    margin-left: -93px;
+}
+
+#landing {
+    background-color: #1F1F1F; /* You can adjust this color to the shade of gray/black you want */
+    height: 100vh; /* This makes the div take up the full height of the viewport */
+    display: flex; /* These three lines center the text vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase; /* This makes the text uppercase */
+    font-family: 'Gotham', sans-serif;
+    color: #F8F4E3;
+   
+
+}
+
+#landing h1.typewriter {
+    font-size: 6em;
+    text-align: right;
+   
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2F2F2F; /* Changed the background color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Gotham', sans-serif;
+}
+
+
