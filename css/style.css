@@ -21,10 +21,31 @@ h1 {
 }
 
 h2 {
-    text-align: right;
+    height: 10em;
     margin-top: 235px; /* Adjust this value to create the space you want */
-    margin-left: -93px;
+    /* margin-left: -93px; */
+
 }
+
+.scale-in-center {
+	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.2s both;
+}
+
+a {
+    color: inherit;
+}
+
+@keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 1;
+    }
+  }
+  
 
 #landing {
     background-color: #1F1F1F; /* You can adjust this color to the shade of gray/black you want */
@@ -42,15 +63,16 @@ h2 {
 #landing h1.typewriter {
     font-size: 6em;
     text-align: right;
-   
     
+}
+h2.typewriter {
+    width:0px;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #2F2F2F; /* Changed the background color */
 }
 
 nav ul {
@@ -65,6 +87,15 @@ nav a {
     text-decoration: none;
     font-size: 1.5em;
     font-family: 'Gotham', sans-serif;
+}
+
+.icons{
+    margin-top: 350px;
+    margin-left: -230px;
+}
+
+div i {
+    padding: 10px;
 }
 
 
