@@ -13,6 +13,11 @@ body, html {
          url('path-to-your-font/Gotham.otf') format('opentype');
   }
 
+/* @media screen and (max-width: 768px) {
+    TODO
+} */
+  
+
 h1,h2,h3{
     width:400px;
     text-align: center;

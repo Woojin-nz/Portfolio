@@ -19,7 +19,6 @@ window.onload = function() {
         const h3 = document.querySelector('h3.typewriter'); 
 
 
-
         const text1 = 'WOOJIN\nJEON';
         h1.innerHTML = '';
         typeWriter(h1, text1, 0);
