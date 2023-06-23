@@ -26,8 +26,18 @@ h2 {
 
 }
 
+h3 {
+    position: absolute;
+    top: 45%;
+    font-size: 8px;
+    margin-top: 20px;
+    left: 51.9%;
+    transform: translateX(-50%) scale(3);
+    color: #89CFF0;
+}
+
 .scale-in-center {
-	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.2s both;
+	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.6s both;
 }
 
 a {
@@ -107,8 +117,8 @@ div i {
     position: absolute;
     bottom: 40px; /* adjust as needed */
     left: 50%;
-    transform: translateX(-50%);
-    transform: scale(3);
+    transform: translateX(-50%) scale(3);
 }
+
 
 
