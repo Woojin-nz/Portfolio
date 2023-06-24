@@ -41,24 +41,13 @@ h3 {
     color: #89CFF0;
 }
 
-.scale-in-center {
-	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.6s both;
-}
-
 a {
     color: inherit;
 }
+a:link {
+    text-decoration: none;
+}
 
-@keyframes scale-in-center {
-    0% {
-      transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(3);
-      opacity: 1;
-    }
-  }
   
 
 #landing {
@@ -86,19 +75,72 @@ h2.typewriter {
     width:0px;
 }
 
-
-.icons{
+.button-move {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    position: absolute;
-    bottom: 10%;
-    left: 3%;
-    transform: translate(-50%, -50%);
-    gap:20px;
+    position: absolute; 
+    top: 70% ;
+    left: 50%;
+    gap: 20px; 
+    animation: button-move 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+
 }
+.button-move button {
+    padding: 10px 20px; 
+    cursor: pointer;
+    border: 2px solid #F8F4E3;  
+    background-color: transparent;
+    color: #F8F4E3;  
+    text-transform: uppercase;
+    font-family: 'Gotham', sans-serif;
+    transition: background-color 0.3s ease;
+    font-size: 16px;  
+}
+
+.button-move button:hover {
+    background-color: #F8F4E3;  
+    color: #1F1F1F;  
+}
+
+
+@keyframes button-move {
+    0% {
+    transform: translate(-50%, -50%) scale(0);
+      opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        transform-origin: center center;
+      opacity: 1;
+    }
+  }
+
+
+.icons {
+    position: fixed;
+    top: 60%;
+    left: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: icons 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+
+}
+
+@keyframes icons {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      transform-origin: center center;
+      opacity: 1;
+    }
+  }
 
 div i {
     padding: 10px;
@@ -106,9 +148,21 @@ div i {
 .scroll-down {
     position: absolute;
     bottom: 40px; 
-    left: 50%;
-    transform: translateX(-50%) scale(3);
+    /* left: 50%; */
+    animation: scroll-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+
 }
+@keyframes scroll-down {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(3);
+      transform-origin: center center;
+      opacity: 1;
+    }
+  }
 
 
 

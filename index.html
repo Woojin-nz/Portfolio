@@ -26,10 +26,17 @@
         <h2 class="typewriter"></h2>
         <h3 class="typewriter"></h3>
         
-        <div class="icons scale-in-center">
+        <div class="icons">
         <a href="https://github.com/woojinnz" target="_blank"> <i class="fa-brands fa-github fa-2xl"></i></a>
         <a href= "https://www.linkedin.com/in/woojinnz/" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
     </div>
+
+    <div class="button-move">
+        <button id="aboutButton"><a href='#about'>About Me</a></button>
+        <button>Projects</button>
+        <button>CV/Contact</button>
+    </div>
+    
 
     <div class="scroll-down">
         <i class="fa-solid fa-arrow-down-long fa-fade" style="color: #33363c;"></i>       
@@ -39,6 +46,7 @@
 
     </div>
     <div id="about">
+        <h1>HELLO</h1>
 
     </div>
     <div id="projects"> 
@@ -50,6 +58,13 @@
     
     
     <script src="js/typewriter.js"></script>
+    <script>
+        //TODO
+        document.getElementById('aboutButton').addEventListener('click', function() {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        });
+        </script>
+        
 </body>
 
 
