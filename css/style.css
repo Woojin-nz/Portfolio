@@ -150,8 +150,11 @@ div i {
     bottom: 40px; 
     /* left: 50%; */
     animation: scroll-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+    background-color: #1F1F1F; /* You can adjust this color to the shade of gray/black you want */
+
 
 }
+
 @keyframes scroll-down {
     0% {
       transform: scale(0);
@@ -164,5 +167,11 @@ div i {
     }
   }
 
+
+
+#about{
+    background-color: #1F1F1F; /* You can adjust this color to the shade of gray/black you want */
+    margin-top: -23px;
+}
 
 
