@@ -1,6 +1,7 @@
 # Portfolio
 
-Welcome to my GitHub repository for my personal portfolio website.
+Welcome to my GitHub repository for my [personal portfolio website](https://www.woojinjeon.me).
+
 
 ## Technologies 
 This portfolio was crafted using: <br />
