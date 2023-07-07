@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700|Oswald:400,700|Bebas+Neue|Anton|Russo+One" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dbc38ccd57.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 
@@ -25,43 +27,50 @@
         <h1 class="typewriter"></h1>
         <h2 class="typewriter"></h2>
         <h3 class="typewriter"></h3>
+
         
-        <div class="icons">
+        
+        <div class="icons"> 
+            
+        <a href="uploads/CV.pdf" target="_blank"> <span class="cv-icon">CV</span></a>
         <a href="https://github.com/woojinnz" target="_blank"> <i class="fa-brands fa-github fa-2xl"></i></a>
         <a href= "https://www.linkedin.com/in/woojinnz/" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
-    </div>
+        
+        <a href="https://forms.gle/8H2bhwJu6mTVps3s8" target="_blank"> <i class="fa-solid fa-clipboard fa-2xl"></i></a>
 
-    <div class="button-move">
-        <button id="aboutButton"><a href='#about'>About Me</a></button>
-        <button>Projects</button>
-        <button>CV/Contact</button>
-    </div>
+        </div>
+
     
+        <div class="button-move">
+      
+            <button data-about="#about" class= "button" ><i class="fas fa-user"></i>About Me</button>
+            <button data-projects="#projects"  class= "button" ><i class="fas fa-laptop-code"></i>Projects </button>
 
-    <div class="scroll-down">
-
-
-        <a href='#about'><i class="fa-solid fa-arrow-down-long fa-fade" style="color: #33363c;"></i></a>       
-   
+     <button data-experience="#experience"  class= "button"><i class="fas fa-briefcase"></i>Experience
+        <button data-contact="#contact"  class= "button"><i class="fas fa-envelope"></i>Contact </button>
+     
         </div>
     
 
+        
+    
+
 
     </div>
 
+
+
     <div id="about">
-        <h1> Work in Progress :)
-            
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        
+        <h1> ABOUT :) 
+    
         
         
         </h1> 
 
     </div>
     <div id="projects"> 
+        <h1>PROJECTS</h1>
 
     </div>
     <div id="contact">
@@ -70,12 +79,8 @@
     
     
     <script src="js/typewriter.js"></script>
-    <script>
+    <script src = "js/scroll.js"></script>
         
-        document.getElementById('aboutButton').addEventListener('click', function() {
-            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-        });
-        </script>
         
 </body>
 
