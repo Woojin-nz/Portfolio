@@ -1,4 +1,4 @@
-const speed = 200; // time in milliseconds between each character
+const speed = 130; // time in milliseconds between each character
 
 function typeWriter(element, text, i) {
   if (i < text.length) {

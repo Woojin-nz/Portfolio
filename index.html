@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
 <head>
@@ -33,28 +33,26 @@
         <div class="icons"> 
             
         <a href="uploads/CV.pdf" target="_blank"> <span class="cv-icon">CV</span></a>
-        <a href="https://github.com/woojinnz" target="_blank"> <i class="fa-brands fa-github fa-2xl"></i></a>
-        <a href= "https://www.linkedin.com/in/woojinnz/" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a href="https://github.com/woojinnz" aria-label="github" target="_blank"> <i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href= "https://www.linkedin.com/in/woojinnz/" aria-label="linkedin" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
         
-        <a href="https://forms.gle/8H2bhwJu6mTVps3s8" target="_blank"> <i class="fa-solid fa-clipboard fa-2xl"></i></a>
+        <a href="https://forms.gle/8H2bhwJu6mTVps3s8" aria-label="docs" target="_blank"> <i class="fa-solid fa-clipboard fa-2xl"></i></a>
 
         </div>
 
     
         <div class="button-move">
       
-            <button data-about="#about" class= "button" ><i class="fas fa-user"></i>About Me</button>
-            <button data-projects="#projects"  class= "button" ><i class="fas fa-laptop-code"></i>Projects </button>
+            <button onclick="window.location.href='#about';" ><i class="fas fa-user"></i>About Me</button>
 
-     <button data-experience="#experience"  class= "button"><i class="fas fa-briefcase"></i>Experience
-        <button data-contact="#contact"  class= "button"><i class="fas fa-envelope"></i>Contact </button>
+            <button onclick="window.location.href='#projects';" ><i class="fas fa-laptop-code"></i>Projects </button>
+
+            <button onclick="window.location.href='#experience';"  class= "button"><i class="fas fa-briefcase"></i>Experience</button>  
+
+            <button onclick="window.location.href='#contact';"><i class="fas fa-envelope"></i>Contact </button>
      
         </div>
     
-
-        
-    
-
 
     </div>
 
@@ -62,24 +60,64 @@
 
     <div id="about">
         
-        <h1> ABOUT :) 
-    
+        <h1>
+            About <br/>
+            Hello, this is me.
         
         
         </h1> 
 
     </div>
     <div id="projects"> 
-        <h1>PROJECTS</h1>
+        <h1>Projects</h1>
+        <div class="projectBox">
+            <div class="project">
+                <img src="path-to-your-image/project1.jpg" alt="Project 1">
+                <h2>Project 1</h2>
+                <p>A brief description of project 1.</p>
+                <a href="url-of-project1" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <img src="path-to-your-image/project2.jpg" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>A brief description of project 2.</p>
+                <a href="url-of-project2" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <img src="path-to-your-image/project2.jpg" alt="Project 2">
+                <h2>Project 3</h2>
+                <p>A brief description of project 2.</p>
+                <a href="url-of-project2" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <img src="path-to-your-image/project2.jpg" alt="Project 2">
+                <h2>Project 4</h2>
+                <p>A brief description of project 2.</p>
+                <a href="url-of-project2" target="_blank">View Project</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="experience">
+        <h1>Experience</h1>
 
     </div>
     <div id="contact">
+        <h1>Contact</h1>
+        <h1>woojinjn@gmail.com</h1>
+        <form>
+            <input type="text" placeholder="Name" required> <br />
+            <input type="email" placeholder="Email" required> <br />
+            <textarea placeholder="Message" required></textarea> <br />
+            <button type="submit">Send</button>
+        </form>
 
     </div>
     
     
     <script src="js/typewriter.js"></script>
-    <script src = "js/scroll.js"></script>
         
         
 </body>
