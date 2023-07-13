@@ -290,6 +290,8 @@ div i {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    width:400px;
+    margin:5px;
 }
 
 .project img {
@@ -356,7 +358,7 @@ div i {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 300px; 
+    width: 400px; 
     margin: 5px; 
 }
 
