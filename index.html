@@ -23,12 +23,29 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700|Oswald:400,700|Bebas+Neue|Anton|Russo+One" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dbc38ccd57.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 
 <body>
+    <button id="toggleButton" onclick="toggleNav()"><i class="fa-solid fa-bars fa-2xl"></i></button>
+
+    <div id="menuOverlay" class="overlay">
+        <div class="overlay-content">
+            <span id="overlay">
+            <a href="#about"  onclick="toggleNav()">About</a> <br/>
+            <a href="#projects" onclick="toggleNav()">Projects</a><br />
+            <a href="#experience"  onclick="toggleNav()">Experience</a><br />
+            <a href="#contact"  onclick="toggleNav()">Contact</a>
+            </span>
+        </div>
+    </div>
+    
+    
+
+    
+    
+    
 
 
     <div id="landing">
@@ -128,6 +145,7 @@
     
     
     <script src="js/typewriter.js"></script>
+    <script src="js/header.js"></script>
         
         
 </body>

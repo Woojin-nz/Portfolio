@@ -13,24 +13,69 @@ body, html {
     font-family: 'Gotham', sans-serif;
     color: white;
     max-width: 100%;
-    overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
     scroll-behavior: smooth;
+    background-color: rgb(31, 31, 31);
 }
 
 
 
-@font-face {
-    font-family: 'Gotham';
-    src: url('path-to-your-font/Gotham.woff2') format('woff2'),
-         url('path-to-your-font/Gotham.woff') format('woff'),
-         url('path-to-your-font/Gotham.otf') format('opentype');
-  }
-
 /* @media screen and (max-width: 768px) {
     TODO
 } */
-  
+
+
+
+#toggleButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    font-size: 24px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color:inherit;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    gap:20px;
+    font-size: 52px;
+    color: #818181;
+    display: inline-block;
+    transition: 0.3s;
+    width:auto;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+}
 
 h1,h2,h3{
     width:400px;
@@ -65,7 +110,6 @@ a:link {
 
 
 #landing {
-    background-color: #1F1F1F; /* You can adjust this color to the shade of gray/black you want */
     height: 100vh; /* This makes the div take up the full height of the viewport */
     display: flex; /* These three lines center the text vertically and horizontally */
     justify-content: center;
@@ -181,8 +225,6 @@ div i {
 
 
 #about{
-    background-color: #1F1F1F; 
-    /* margin-top: -23px; */
     width:100vw;
     height: 100vh;
     display: flex;
@@ -192,9 +234,7 @@ div i {
 
 
 
-#projects{
-    background-color: #1F1F1F; 
-    
+#projects{    
     width:100vw;
     min-height: 100vh;
     display: flex;
@@ -258,9 +298,7 @@ div i {
 }
 
 
-#experience{
-    background-color: #1F1F1F; 
-    
+#experience{    
     width:100vw;
     min-height: 100vh;
     display: flex;
@@ -269,9 +307,7 @@ div i {
 }
 
 
-#contact{
-    background-color: #1F1F1F; 
-   
+#contact{   
     width:100vw;
     min-height: 100vh;
     display: flex;
