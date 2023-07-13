@@ -28,7 +28,7 @@
 
 
 <body>
-    <button id="toggleButton" onclick="toggleNav()"><i class="fa-solid fa-bars fa-2xl"></i></button>
+    <button id="toggleButton" onclick="toggleNav()"><i class="fa-solid fa-bars fa-xl"></i></button>
 
     <div id="menuOverlay" class="overlay">
         <div class="overlay-content">
@@ -63,7 +63,7 @@
         <a href="https://github.com/woojinnz" aria-label="github" target="_blank"> <i class="fa-brands fa-github fa-2xl"></i></a>
         <a href= "https://www.linkedin.com/in/woojinnz/" aria-label="linkedin" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
         
-        <a href="https://forms.gle/8H2bhwJu6mTVps3s8" aria-label="docs" target="_blank"> <i class="fa-solid fa-clipboard fa-2xl"></i></a>
+        <a href="https://forms.gle/8H2bhwJu6mTVps3s8" aria-label="docs" target="_blank"> <i class="fas fa-file-alt fa-2xl"></i></a>
 
         </div>
 
@@ -131,17 +131,25 @@
         <h1>Experience</h1>
 
     </div>
+    
     <div id="contact">
         <h1>Contact</h1>
-        <h1>woojinjn@gmail.com</h1>
-        <form>
-            <input type="text" placeholder="Name" required> <br />
-            <input type="email" placeholder="Email" required> <br />
-            <textarea placeholder="Message" required></textarea> <br />
-            <button type="submit">Send</button>
+        <form action="action_page.php" method="post">
+    
+            <label for="fname">First Name</label><br />
+            <input type="text" id="fname" name="firstname" placeholder="Your name"> <br />
+    
+            <label for="lname">Email</label><br />
+            <input type="text" id="email" placeholder="Your email"> <br />
+    
+            <label for="subject">Message</label><br />
+            <textarea id="subject" name="subject" placeholder="Write me a message" style="height:100px"></textarea> <br />
+    
+            <input type="submit" value="Submit">
+    
         </form>
-
     </div>
+    
     
     
     <script src="js/typewriter.js"></script>
