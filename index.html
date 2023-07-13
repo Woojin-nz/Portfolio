@@ -134,16 +134,16 @@
     
     <div id="contact">
         <h1>Contact</h1>
-        <form action="src/php/action_page.php" method="post" novalidate>
+        <form name="contact" method="POST" novalidate data-netlify="true">
     
-            <label for="fname">First Name</label><br />
-            <input type="text" id="fname" name="firstname" placeholder="Your name"> <br />
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name"> <br>
     
-            <label for="email">Email</label><br />
-            <input type="email" id="email" placeholder="Your email"> <br />
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Your email"> <br>
     
-            <label for="subject">Message</label><br />
-            <textarea id="subject" name="subject" placeholder="Write me a message" style="height:100px"></textarea> <br />
+            <label for="subject">Message</label><br>
+            <textarea id="subject" name="subject" placeholder="Write me a message" style="height:100px"></textarea> <br>
     
             <input type="submit" value="Send">
     
