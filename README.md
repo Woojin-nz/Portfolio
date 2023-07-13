@@ -1,7 +1,6 @@
 # Portfolio
 
-Welcome to my GitHub repository for my [personal portfolio website](https://www.woojinjeon.me).
-
+Welcome to my GitHub repository for my [personal portfolio website](https://www.woojinjeon.me). <br>
 
 ## Technologies 
 This portfolio was crafted using: <br />
@@ -20,5 +19,7 @@ My Portfolio showcases: <br />
 ## Screenshots
 TODO
 
-**Author**:Woojin Jeon
+**Author**:Woojin Jeon <br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a8a84837-6659-4e1f-87fd-d3d9c3c67da0/deploy-status)](https://app.netlify.com/sites/woojinportfolio/deploys)
+
 
