@@ -28,7 +28,7 @@ body, html {
 #toggleButton {
     position: fixed;
     top: 50px;
-    right: 20px;
+    right: 0px;
     z-index: 100;
     font-size: 24px;
     background-color: inherit;
@@ -228,26 +228,111 @@ div i {
 
 #about{
     width:100vw;
-    /* min-height: 100vh; */
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1000;
+    margin-bottom: 40px;
+}
+#about h2{
+    height: auto;
 }
 
-#about h2{
-    height: 20px;
+
+.about-text{
+    
+    margin-top:-450px;
+    margin-bottom: 40px;
 }
 
 
 .about-image {
-    width: 400px; /* Adjusts the width of the image. You can change this value to suit your needs */
-    height: 500px; /* Adjusts the height of the image. You can change this value to suit your needs */
-    margin-right: 20px; /* Adds some space to the right of the image */
+    margin-top: 20px;
+    width: 430px;
+    height: 400px;
+    margin-right: 700px; /* Adds some space to the right of the image */
+    border-radius: 50%;
 }
 
-.about-text {
-    max-width: 70%; /* Limits the width of the text section to prevent it from stretching too far. You can adjust this value to suit your needs */
+#mainText{
+    font-size:30px;
+    margin-left: 500px;
+    width: auto;
+
+
+}
+
+.blue{
+    color:#ADD8E6;
+}
+
+#subText{
+    font-size:20px;
+    margin-left: 500px;
+    width: 700px;
+    color:white;
+    text-align: left;
+    line-height: 25px;
+}
+
+    
+/* <!-- About Text Not needed for now --> */
+/* #additionalInfo{
+    margin-top:150px;
+    margin-left:-720px;
+    line-height: 50px;
+    font-size:18px;
+    text-align: center;
+} */
+
+@media screen and (max-width: 1200px) {
+    #about{
+        width:100vw;
+        min-height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -240px;
+        z-index: 1000;
+
+    }
+    #about h2{
+        height: 400px;
+    }
+    
+    .blue{
+        color:#ADD8E6;
+    }
+    .about-image-container {
+        position: relative;
+    }
+    
+    .about-image {
+        position: absolute;
+        top: -350px; /* Adjust this to move the image up or down */
+        /* Other styles... */
+    }
+    
+
+    #mainText{
+        font-size:30px;
+        /* margin-top: 100px; */
+        /* margin-left: 500px; */
+        width: auto;
+
+
+    }
+
+    #subText{
+        margin-top: 550px;
+        font-size:20px;
+        /* margin-left: 500px; */
+        width: 700px;
+        color:white;
+        text-align: left;
+        line-height: 25px;
+    }
 }
 
 
@@ -393,36 +478,34 @@ div i {
     align-items: center;
     flex-direction: column;
   }
+
+
+
 #contact h2{
     margin: 0 0;
     height:4em;
 }
   
-  form {
-    width: 25%;
+form {
+    width: 90%;
+    max-width: 400px;
+    min-width: 300px;
     margin: 0 auto;
-    margin-bottom:100px;
-  }
+    margin-bottom: 100px;
+}
+
+@media (min-width: 600px) {
+    form {
+        width: 75%;
+    }
+}
   
   form label {
     font-weight: bold;
     margin-top: 10px;
   }
   
-  input[type=text], textarea {
-    width: 100%; 
-    padding: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px;
-    font-size: 16px; 
-    resize: none; 
-    font-family: 'Gotham', sans-serif;
-
-  }
-  input[type=email], textarea {
+  input[type=text], textarea,input[type=email] {
     width: 100%; 
     padding: 15px; 
     border: 1px solid #ccc; 
