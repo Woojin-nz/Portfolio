@@ -12,16 +12,12 @@ body, html {
     height: 100%;
     font-family: 'Gotham', sans-serif;
     color: white;
-    max-width: 100%;
+    width: 100%;
     scroll-behavior: smooth;
     background-color: rgb(31, 31, 31);
 }
 
 
-
-/* @media screen and (max-width: 768px) {
-    TODO
-} */
 
 
 
@@ -68,7 +64,7 @@ body, html {
     color: #818181;
     display: inline-block;
     transition: 0.3s;
-    width:auto;
+    width:100%;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -79,28 +75,6 @@ body, html {
   .overlay a {font-size: 20px}
 }
 
-h1,h2,h3{
-    width:400px;
-    text-align: center;
-}
-h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-h2 {
-    height: 14.15em;
-    margin-top: 98px; 
-}
-
-h3 {
-    height:11.5em;
-    margin-left: -270px;
-    margin-bottom: 10px;
-    color: #89CFF0;
-}
 
 a {
     color: inherit;
@@ -112,7 +86,7 @@ a:link {
 
 
 #landing {
-    height: 100vh; /* This makes the div take up the full height of the viewport */
+    min-height: 100vh; /* This makes the div take up the full height of the viewport */
     display: flex; /* These three lines center the text vertically and horizontally */
     justify-content: center;
     align-items: center;
@@ -120,20 +94,43 @@ a:link {
     font-family: 'Gotham', sans-serif;
     color: #F8F4E3;
     position: relative;
+    margin-bottom: 100px;
    
 
 }
-
-#landing h1.typewriter {
-    font-size: 6em;
+#oneBigBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -400px;
+    width:100vw;
+}
+#name, #loc {
+    width: 500px;
+  }
+  
+  
+#name{
+    margin-right: 270px;
     text-align: right;
-    line-height: 0.85;
-    margin-top: -265px;
-    
+    font-size: 4em;
+    margin-top: 5px;
 }
-h2.typewriter {
-    width:0px;
+#loc{
+    margin-top:-80px;
+    margin-left: 740px;
 }
+#devTag{
+    margin-top: -7vh;
+    margin-left: 20px;
+    color:#ADD8E6;
+}
+
+
+
+
+
+
 
 .button-move {
     display: flex;
@@ -217,6 +214,7 @@ h2.typewriter {
     width: 16px;
     left: 8px;
     top: -18px;
+    font-style: normal;
   }
   
 
@@ -224,11 +222,49 @@ div i {
     padding: 10px;
 }
 
+@media screen and (max-width: 760px) {
+    .icons {
+        display: none;
+        z-index: 1000;
+        animation:none;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        bottom: 5%;
+        gap:50px;
+        
+        left:auto;
+        top:auto;
+        
+        
+
+    }
+    .icons i {
+        font-size: 70px;
+        color: #818181;
+        transition:0.5s;
+        
+    }
+
+    .cv-icon{
+        position: relative;
+        display: contents;
+
+    }
+    
+    .icons i:hover, .icons i:focus {
+        color: #f1f1f1;
+    }
+    
+
+
+}
+
 
 
 #about{
     width:100vw;
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,6 +354,22 @@ div i {
         text-align: left;
         line-height: 25px;
     }
+}
+
+@media screen and (max-width: 900px) {
+    #subText{
+        width: 600px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    #subText{
+        width: 600px;
+    }
+
+
 }
 
 
