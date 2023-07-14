@@ -25,34 +25,38 @@ document.addEventListener('click', event => {
 
 function toggleNav() {
 
-if (window.innerWidth <= 760) {
-    if (overlay.style.height == "100%") {
-        overlay.style.height = "0%";
-        btn.innerHTML = '<i class="fa-solid fa-bars fa-xl"></i>';
-        for(var i = 0; i < icons.length; i++) {
-            icons[i].style.display = 'none'; // hides the icons
+    if (document.documentElement.clientWidth <= 760) {
+        if (overlay.style.height == "100%") {
+            overlay.style.height = "0%";
+            btn.innerHTML = '<i class="fa-solid fa-bars fa-xl"></i>';
+            for(var i = 0; i < icons.length; i++) {
+                icons[i].style.display = 'none'; // hides the icons
+            }
+        } else {
+            console.log("here"+document.documentElement.clientWidth);
+            overlay.style.height = "100%";
+            btn.innerHTML = '<i class="fa-solid fa-x fa-xl"></i>';
+            count = 0;
+            btn.style.backgroundColor = "#00000000";
+            for(var i = 0; i < icons.length; i++) {
+                icons[i].style.display = 'flex'; // shows the icons
+            }
         }
     } else {
-        overlay.style.height = "100%";
-        btn.innerHTML = '<i class="fa-solid fa-x fa-xl"></i>';
-        count = 0;
-        btn.style.backgroundColor = "#00000000";
-        for(var i = 0; i < icons.length; i++) {
-            icons[i].style.display = 'flex'; // shows the icons
+        console.log(document.documentElement.clientWidth);
+
+
+        // your code for larger screens
+        if (overlay.style.height == "100%") {
+            overlay.style.height = "0%";
+            btn.innerHTML = '<i class="fa-solid fa-bars fa-xl"></i>';
+        } else {
+            overlay.style.height = "100%";
+            btn.innerHTML = '<i class="fa-solid fa-x fa-xl"></i>';
+            count = 0;
+            btn.style.backgroundColor = "#00000000";
         }
     }
-} else {
-    // your code for larger screens
-    if (overlay.style.height == "100%") {
-        overlay.style.height = "0%";
-        btn.innerHTML = '<i class="fa-solid fa-bars fa-xl"></i>';
-    } else {
-        overlay.style.height = "100%";
-        btn.innerHTML = '<i class="fa-solid fa-x fa-xl"></i>';
-        count = 0;
-        btn.style.backgroundColor = "#00000000";
-    }
-}
 }
 
 
