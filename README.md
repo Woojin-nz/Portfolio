@@ -7,6 +7,7 @@ This portfolio was crafted using: <br />
 **HTML** for structure <br />
 **CSS** for style <br />
 **JavaScript** for better user experience <br />
+No (HTML/CSS/JS) Frameworks were used so I could learn the fudamentals.
 
 ## Features
 My Portfolio showcases: <br />
@@ -17,7 +18,7 @@ My Portfolio showcases: <br />
 **Contact**: A contact form if you have any questions<br />
 
 ## Screenshots
-TODO
+Coming Soon..
 
 **Author**:Woojin Jeon <br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a8a84837-6659-4e1f-87fd-d3d9c3c67da0/deploy-status)](https://app.netlify.com/sites/woojinportfolio/deploys)
